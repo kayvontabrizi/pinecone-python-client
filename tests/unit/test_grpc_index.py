@@ -1,6 +1,5 @@
 from copy import deepcopy
 
-import numpy as np
 import pandas as pd
 import pytest
 
@@ -169,7 +168,7 @@ class TestGrpcIndex:
         ("values", ['the', 'lazy', 'fox']),
         ("values", 'the lazy fox'),
         ("values", 0.5),
-        ("metadata", np.nan),
+        ("metadata", float("nan")),
         ("metadata", ['key1', 'key2']),
         ("sparse_values", 'cat'),
         ("sparse_values", []),
